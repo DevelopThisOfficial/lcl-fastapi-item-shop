@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+DevelopThis Shop
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container has-text-centered block">
+        <h1 class="title">Welcome!</h1>
+    </div>
+    <div class="container is-fluid" id="items-for-sale">
+        <template id="item-card">
+            <div class="card is-half is-offset-one-quarter">
+                <header class="card-header has-text-centered">
+                    <p class="card-header-title">Card header</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec
+                        id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
+                        consectetur purus sit amet fermentum.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">$ <span class="price"></span></p>
+                    <a href="#" class="card-footer-item">Add To Cart</a>
+                </footer>
+            </div>
+        </template>
+    </div>
+</section>
+
+
+
+<script src="/static/js/index.js"></script>
+{% endblock %}
